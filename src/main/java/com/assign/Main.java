@@ -6,7 +6,7 @@ public class Main {
 
         ChristmasNameDrawer drawer = new ChristmasNameDrawer();
 
-        drawer.assignNames();
+        drawer.drawNames();
 
         ChristmasNameDrawer.display();
 

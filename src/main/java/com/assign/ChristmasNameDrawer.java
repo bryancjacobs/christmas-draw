@@ -26,7 +26,7 @@ public class ChristmasNameDrawer {
 
     private static final Map<String, String> youGot = new HashMap<String, String>();
 
-    public Map<String, String> assignNames() {
+    public Map<String, String> drawNames() {
         for (String name : keyToName.values()) {
             youGot.put(name, generateNameYouGet(name) );
         }

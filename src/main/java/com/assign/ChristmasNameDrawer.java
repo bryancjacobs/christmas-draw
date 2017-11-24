@@ -1,8 +1,6 @@
 package com.assign;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 public class ChristmasNameDrawer {
 
@@ -69,10 +67,17 @@ public class ChristmasNameDrawer {
         return nameYouGet;
     }
 
-    public static void display(Map<String, String> names) {
-        for (String name : names.keySet()) {
-            System.out.println(name + " --> " + names.get(name));
+    /**
+     * Displays the names such that its sorted by key where the key is the name
+     */
+    public static void display() {
+
+        SortedSet<String> keys = new TreeSet<String> (youGot.keySet());
+
+        for (String name : keys) {
+            System.out.println(name + " --> " + youGot.get(name));
         }
+
     }
 
 }
